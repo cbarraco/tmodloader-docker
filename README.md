@@ -9,15 +9,13 @@
 
 # Quickstart
 
-Build this repo's image:
+Put the following in a bat/shell file and run it:
 
 ```bash
-docker build -t tmodloader https://github.com/FragSoc/tmodloader-docker.git
+docker run --restart unless-stopped -v .<absolute-path-to-folder-with-worlds>:/worlds -v ./mods:/mods cbarraco/tmodloader
 ```
 
-Then follow the steps below to run.
-
-## With Existing World
+# With Existing World
 
 If you have a world you've previously generated, you can use it as a drop-in with this server.
 
@@ -29,7 +27,7 @@ If you have a world you've previously generated, you can use it as a drop-in wit
 docker run -v <absolute-path-to-folder-with-worlds>:/worlds -p 7777:7777 fragsoc/tmodloader
 ```
 
-## Without World
+# Without World
 
 If you want to use the server to generate a world, you need to use the interactive mode.
 
@@ -61,9 +59,8 @@ Location | Purpose
 Arg Name | Default | Purpose
 ---|---|---
 `UID` | `999` | Unix UID to use when running the server
-`SERVER_VER` | `1412` | Terraria version integer (numeric chars only)
-`SERVER_VER_INC` | `042` | Terraria version increment, used for server downloads
-`TMODLOADER_VERSION` | `v0.11.8.1` | tModLoader version string
+`SERVER_VER` | `1436` | Terraria version integer (numeric chars only)
+`TMODLOADER_VERSION` | `v2022.08.54.4` | tModLoader version string
 
 # Licensing
 

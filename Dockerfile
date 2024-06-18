@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/dotnet/sdk:6.0
+FROM mcr.microsoft.com/dotnet/sdk:8.0
 
 ARG SERVER_VER="1449"
 ARG TMODLOADER_VERSION="v2024.04.3.2"

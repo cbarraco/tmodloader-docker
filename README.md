@@ -59,8 +59,8 @@ Location | Purpose
 Arg Name | Default | Purpose
 ---|---|---
 `UID` | `999` | Unix UID to use when running the server
-`SERVER_VER` | `1436` | Terraria version integer (numeric chars only)
-`TMODLOADER_VERSION` | `v2022.08.54.4` | tModLoader version string
+`SERVER_VER` | `1449` | Terraria version integer (numeric chars only)
+`TMODLOADER_VERSION` | `v2024.04.3.2` | tModLoader version string
 
 # Licensing
 
